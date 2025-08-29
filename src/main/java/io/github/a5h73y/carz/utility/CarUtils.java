@@ -180,7 +180,7 @@ public class CarUtils {
 
 	/**
 	 * Give the player a customised key.
-	 * If enabled, a Durability enchantment will be applied to give a glowing effect.
+	 * If enabled, a UNBREAKING enchantment will be applied to give a glowing effect.
 	 *
 	 * @param player target player
 	 */
@@ -193,7 +193,7 @@ public class CarUtils {
 		itemMeta.setDisplayName(keyName);
 
 		if (Carz.getDefaultConfig().getBoolean("Key.Glow")) {
-			itemMeta.addEnchant(Enchantment.DURABILITY, 1, false);
+			itemMeta.addEnchant(Enchantment.UNBREAKING, 1, false);
 			itemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 		}
 
